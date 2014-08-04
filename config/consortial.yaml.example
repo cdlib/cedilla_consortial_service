@@ -1,12 +1,17 @@
+# If the XML file lives on a different server, set retrieve_xml_file to 'true' and the target and 
+# -------------------------------------------------------------------------------------------------
+retrieve_xml_file: false
 target: 'http://my.institution.org/consortial/data'
+max_age_days: 7
 
 http_method: 'get'
 http_timeout: 5
 http_error_on_non_200: true
 http_max_redirects: 5
 
+# XML File location and xpaths to the data
+# -------------------------------------------------------------------------------------------------
 xml_file: './latest.xml'
-max_age_days: 7
 
 xpath_campus_grouping: 'Root//Element1//Element2'
 xpath_campus_name: '@attribute'

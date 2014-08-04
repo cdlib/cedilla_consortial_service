@@ -105,16 +105,19 @@ private
   def process_request(code, ip)
     data = ''
     
-    # If the data in the local XML file is outdated OR the file doesn't exist
-    if File.exists?(@config['xml_file'])
-      last_updated = File.new(@config['xml_file'], "r").mtime 
+    # If the external XML file retrieval has been enabled
+    if @config['retrieve_xml_file']
+      # If the data in the local XML file is outdated OR the file doesn't exist
+      if File.exists?(@config['xml_file'])
+        last_updated = File.new(@config['xml_file'], "r").mtime 
     
-      # If the number od days since the data was last downloaded is greater than the number of days specified in the config
-      download_data if ((Time.now - last_updated).to_i / (24 * 60 * 60) > @config['max_age_days'].to_i)
-    else
-      download_data
+        # If the number od days since the data was last downloaded is greater than the number of days specified in the config
+        download_data if ((Time.now - last_updated).to_i / (24 * 60 * 60) > @config['max_age_days'].to_i)
+      else
+        download_data
+      end
     end
-
+    
     # Load the cross reference data from disk
     if File.exists?(@config['xml_file'])
       data = File.open(@config['xml_file'], "r").read

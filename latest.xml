@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IPRESPONSE>
+  <status statusCode="0">
+    <statusMessage>Success</statusMessage>
+  </status>
+  <response responseType="IPList">
+    <IPcampus name="UCB">
+      <IPrange begin="127.0.0.1" end="127.0.0.255" lastUpdate="2006-10-11 15:45:39"/>
+      <IPrange begin="69.35.18.206" end="69.35.18.206" lastUpdate="2006-10-11 15:45:39"/>
+      <IPrange begin="128.3.60.0" end="128.3.63.255" lastUpdate="2007-11-05 15:12:49"/>
+      <IPrange begin="128.32.0.0" end="128.32.4.255" lastUpdate="2006-10-11 15:45:39"/>
+      <IPrange begin="128.32.5.0" end="128.32.5.138" lastUpdate="2006-10-11 15:45:39"/>
+      <IPrange begin="128.32.5.145" end="128.32.5.255" lastUpdate="2006-10-11 15:45:39"/>
+      <IPrange begin="128.32.6.0" end="128.32.43.255" lastUpdate="2006-10-11 15:45:39"/>
+      <IPrange begin="128.32.44.0" end="128.32.44.255" lastUpdate="2008-04-11 13:52:00"/>
+      <IPrange begin="128.32.45.0" end="128.32.158.255" lastUpdate="2006-10-11 15:45:39"/>
+      <IPrange begin="128.32.159.0" end="128.32.159.17" lastUpdate="2006-10-11 15:45:39"/>
+      <IPrange begin="128.32.159.19" end="128.32.159.255" lastUpdate="2006-10-11 15:45:39"/>
+      <IPrange begin="128.32.160.0" end="128.32.200.255" lastUpdate="2006-10-11 15:45:39"/>
+      <IPrange begin="128.32.201.0" end="128.32.201.255" lastUpdate="2006-10-11 15:45:39"/>
+      <IPrange begin="128.32.202.0" end="128.32.220.255" lastUpdate="2006-10-11 15:45:39"/>
+      <IPrange begin="128.32.222.0" end="128.32.255.255" lastUpdate="2006-10-11 15:45:39"/>
+      <IPrange begin="131.243.52.0" end="131.243.52.255" lastUpdate="2006-10-11 15:45:39"/>
+      <IPrange begin="136.152.0.0" end="136.152.255.255" lastUpdate="2006-10-11 15:45:39"/>
+      <IPrange begin="169.229.0.0" end="169.229.49.255" lastUpdate="2008-04-11 13:52:00"/>
+      <IPrange begin="169.229.50.32" end="169.229.50.255" lastUpdate="2008-04-11 13:52:00"/>
+      <IPrange begin="169.229.51.0" end="169.229.255.255" lastUpdate="2008-04-11 13:52:00"/>
+      <IPrange begin="192.101.42.0" end="192.101.42.255" lastUpdate="2006-10-11 15:45:39"/>
+      <IPrange begin="199.133.223.253" end="199.133.223.253" lastUpdate="2012-10-04 12:19:30"/>
+      <IPrange begin="202.3.226.52" end="202.3.226.52" lastUpdate="2006-10-11 15:45:39"/>
+      <VPNrange begin="169.229.0.98" end="169.229.0.98" lastUpdate="2006-10-11 15:45:39"/>
+      <VPNrange begin="169.229.32.135" end="169.229.32.135" lastUpdate="2006-10-11 15:45:39"/>
+    </IPcampus>
+    <IPcampus name="UCD">
+      <IPrange begin="12.235.42.0" end="12.235.42.25" lastUpdate="2014-07-02 12:05:32"/>
+      <IPrange begin="128.120.0.0" end="128.120.255.255" lastUpdate="2006-10-11 15:45:39"/>
+      <IPrange begin="152.79.0.0" end="152.79.255.255" lastUpdate="2006-10-11 15:45:39"/>
+      <IPrange begin="169.237.0.0" end="169.237.255.255" lastUpdate="2006-10-11 15:45:39"/>
+      <IPrange begin="216.101.142.0" end="216.101.142.255" lastUpdate="2006-10-11 15:45:39"/>
+      <VPNrange begin="128.120.194.194" end="128.120.194.194" lastUpdate="2011-06-29 15:46:40"/>
+      <VPNrange begin="128.120.194.195" end="128.120.194.195" lastUpdate="2011-06-29 15:46:40"/>
+      <VPNrange begin="128.120.194.196" end="128.120.194.196" lastUpdate="2011-06-29 15:46:40"/>
+      <VPNrange begin="169.237.45.1" end="169.237.45.254" lastUpdate="2014-07-02 12:05:31"/>
+      <ProxyRange begin="169.237.215.179" end="169.237.215.179" lastUpdate="2014-07-02 12:05:31"/>
+    </IPcampus>
+    <IPcampus name="UCI">
+      <IPrange begin="66.171.203.40" end="66.171.203.40" lastUpdate="2013-11-05 15:11:30">
+        <IPRangeNote>Encore for Millennium Address</IPRangeNote>
+      </IPrange>
+      <IPrange begin="128.195.0.0" end="128.195.255.255" lastUpdate="2006-10-11 15:45:39"/>
+      <IPrange begin="128.200.0.0" end="128.200.255.255" lastUpdate="2006-10-11 15:45:39"/>
+      <IPrange begin="160.87.0.0" end="160.87.255.255" lastUpdate="2006-10-11 15:45:39"/>
+      <IPrange begin="169.234.0.0" end="169.234.255.255" lastUpdate="2008-04-11 13:52:00"/>
+      <VPNrange begin="128.200.205.245" end="128.200.205.245" lastUpdate="2006-10-11 15:45:39"/>
+      <VPNrange begin="169.234.240.2" end="169.234.240.2" lastUpdate="2008-10-09 17:06:40">
+        <VPNRangeNote>VPN address for UCI</VPNRangeNote>
+      </VPNrange>
+    </IPcampus>
+    <IPcampus name="UCLA">
+      <IPrange begin="65.204.138.50" end="65.204.138.50" lastUpdate="2012-01-12 16:57:35"/>
+      <IPrange begin="74.80.223.0" end="74.80.223.255" lastUpdate="2012-06-06 11:59:17"/>
+      <IPrange begin="128.97.0.0" end="128.97.255.255" lastUpdate="2006-10-11 15:45:39"/>
+      <IPrange begin="131.179.0.0" end="131.179.255.255" lastUpdate="2006-10-11 15:45:39"/>
+      <IPrange begin="149.142.0.0" end="149.142.255.255" lastUpdate="2006-10-11 15:45:39"/>
+      <IPrange begin="164.67.0.0" end="164.67.255.255" lastUpdate="2006-10-11 15:45:39"/>
+      <IPrange begin="169.232.0.0" end="169.232.255.255" lastUpdate="2006-10-11 15:45:39"/>
+      <IPrange begin="208.50.127.226" end="208.50.127.226" lastUpdate="2012-01-12 16:57:35"/>
+      <IPrange begin="208.50.127.228" end="208.50.127.228" lastUpdate="2012-01-12 16:57:35"/>
+      <VPNrange begin="164.67.62.100" end="164.67.62.100" lastUpdate="2006-10-11 15:45:39"/>
+      <VPNrange begin="169.232.46.143" end="169.232.46.143" lastUpdate="2006-10-11 15:45:39"/>
+      <VPNrange begin="169.232.48.143" end="169.232.48.143" lastUpdate="2006-10-11 15:45:39"/>
+    </IPcampus>
+    <IPcampus name="UCM">
+      <IPrange begin="169.236.0.0" end="169.236.255.255" lastUpdate="2006-10-11 15:45:39"/>
+      <IPrange begin="192.35.211.0" end="192.35.213.255" lastUpdate="2006-10-11 15:45:39"/>
+      <IPrange begin="192.35.214.0" end="192.35.214.128" lastUpdate="2006-10-11 15:45:39"/>
+      <IPrange begin="192.35.215.0" end="192.35.215.255" lastUpdate="2006-10-11 15:45:39"/>
+      <VPNrange begin="169.236.1.252" end="169.236.1.252" lastUpdate="2006-10-11 15:45:39"/>
+    </IPcampus>
+    <IPcampus name="UCOP">
+      <IPrange begin="64.165.192.240" end="64.165.192.255" lastUpdate="2007-11-05 15:12:49"/>
+      <IPrange begin="66.121.156.144" end="66.121.156.159" lastUpdate="2006-10-11 15:45:40"/>
+      <IPrange begin="128.48.0.0" end="128.48.255.255" lastUpdate="2006-10-11 15:45:40"/>
+      <IPrange begin="170.215.49.233" end="170.215.49.233" lastUpdate="2006-10-11 15:45:40"/>
+      <IPrange begin="192.12.83.0" end="192.12.83.255" lastUpdate="2006-10-11 15:45:40">
+        <IPRangeNote>UCDC</IPRangeNote>
+      </IPrange>
+      <IPrange begin="192.12.86.255" end="192.12.87.255" lastUpdate="2014-07-02 12:06:22"/>
+      <IPrange begin="192.35.209.128" end="192.35.209.255" lastUpdate="2011-06-29 15:46:22">
+        <IPRangeNote>staging at UCB</IPRangeNote>
+      </IPrange>
+      <IPrange begin="192.35.226.0" end="192.35.226.255" lastUpdate="2011-06-29 15:46:22">
+        <IPRangeNote>disaster recovery</IPRangeNote>
+      </IPrange>
+      <IPrange begin="192.35.228.0" end="192.35.228.225" lastUpdate="2011-06-29 15:46:25">
+        <IPRangeNote>disaster recovery</IPRangeNote>
+      </IPrange>
+      <IPrange begin="216.38.136.162" end="216.38.136.190" lastUpdate="2014-04-22 14:08:44">
+        <IPRangeNote>UC Press</IPRangeNote>
+      </IPrange>
+      <IPrange begin="216.101.246.144" end="216.101.246.159" lastUpdate="2007-11-05 15:12:49"/>
+      <IPrange begin="216.230.177.98" end="216.230.177.127" lastUpdate="2006-10-11 15:45:40"/>
+      <VPNrange begin="128.48.145.12" end="128.48.145.12" lastUpdate="2006-10-11 15:45:40"/>
+    </IPcampus>
+    <IPcampus name="UCR">
+      <IPrange begin="138.23.0.0" end="138.23.224.51" lastUpdate="2008-04-09 12:44:07"/>
+      <IPrange begin="138.23.224.53" end="138.23.255.255" lastUpdate="2008-04-09 12:44:07"/>
+      <IPrange begin="169.235.0.0" end="169.235.255.255" lastUpdate="2007-11-05 15:12:49"/>
+      <IPrange begin="192.31.146.0" end="192.31.146.255" lastUpdate="2006-10-11 15:45:39"/>
+      <VPNrange begin="138.23.2.158" end="138.23.2.158" lastUpdate="2006-10-11 15:45:39"/>
+      <VPNrange begin="138.23.226.140" end="138.23.226.140" lastUpdate="2006-10-11 15:45:39"/>
+    </IPcampus>
+    <IPcampus name="UCSB">
+      <IPrange begin="128.111.0.0" end="128.111.255.255" lastUpdate="2006-10-11 15:45:39"/>
+      <IPrange begin="169.231.0.0" end="169.231.255.255" lastUpdate="2006-10-11 15:45:39"/>
+      <VPNrange begin="128.111.61.1" end="128.111.61.254" lastUpdate="2006-10-11 15:45:39"/>
+      <VPNrange begin="128.111.125.82" end="128.111.125.82" lastUpdate="2006-10-11 15:45:39"/>
+    </IPcampus>
+    <IPcampus name="UCSC">
+      <IPrange begin="128.114.0.0" end="128.114.255.255" lastUpdate="2006-10-11 15:45:39"/>
+      <IPrange begin="169.233.0.0" end="169.233.255.255" lastUpdate="2006-10-11 15:45:39"/>
+      <VPNrange begin="128.114.228.0" end="128.114.228.255" lastUpdate="2014-07-02 12:06:06"/>
+      <ProxyRange begin="128.114.163.7" end="128.114.163.7" lastUpdate="2012-01-12 16:57:37">
+        <ProxyRangeNote>Proxy</ProxyRangeNote>
+      </ProxyRange>
+    </IPcampus>
+    <IPcampus name="UCSD">
+      <IPrange begin="67.58.32.0" end="67.58.63.255" lastUpdate="2010-04-30 15:58:04"/>
+      <IPrange begin="69.196.32.0" end="69.196.35.255" lastUpdate="2014-07-02 12:05:56"/>
+      <IPrange begin="128.54.0.0" end="128.54.55.255" lastUpdate="2010-06-02 13:56:28"/>
+      <IPrange begin="128.54.64.0" end="128.54.255.255" lastUpdate="2010-06-02 13:56:28"/>
+      <IPrange begin="132.239.0.0" end="132.239.255.255" lastUpdate="2007-11-05 15:12:49"/>
+      <IPrange begin="132.249.0.0" end="132.249.255.255" lastUpdate="2006-10-11 15:45:40"/>
+      <IPrange begin="137.110.1.0" end="137.110.113.255" lastUpdate="2008-04-11 13:52:00"/>
+      <IPrange begin="137.110.114.0" end="137.110.114.37" lastUpdate="2008-04-11 13:52:00"/>
+      <IPrange begin="137.110.114.39" end="137.110.114.255" lastUpdate="2008-04-11 13:52:00"/>
+      <IPrange begin="137.110.115.0" end="137.110.141.255" lastUpdate="2008-04-11 13:52:00"/>
+      <IPrange begin="137.110.143.0" end="137.110.161.255" lastUpdate="2008-04-11 13:52:00"/>
+      <IPrange begin="137.110.162.16" end="137.110.162.255" lastUpdate="2008-04-11 13:52:00"/>
+      <IPrange begin="137.110.163.0" end="137.110.243.255" lastUpdate="2013-10-16 16:55:46"/>
+      <IPrange begin="137.110.244.1" end="137.110.244.127" lastUpdate="2013-10-16 16:55:46"/>
+      <IPrange begin="137.110.244.160" end="137.110.244.255" lastUpdate="2013-10-16 16:55:46"/>
+      <IPrange begin="137.110.245.0" end="137.110.255.255" lastUpdate="2013-10-16 16:55:46"/>
+      <IPrange begin="169.228.0.0" end="169.228.171.255" lastUpdate="2014-07-02 12:05:57"/>
+      <IPrange begin="169.228.196.0" end="169.228.255.255" lastUpdate="2012-01-26 16:43:58"/>
+      <IPrange begin="192.12.207.0" end="192.12.207.255" lastUpdate="2006-10-11 15:45:40"/>
+      <IPrange begin="192.31.21.28" end="192.31.21.28" lastUpdate="2012-01-12 16:57:35"/>
+      <IPrange begin="192.31.21.112" end="192.31.21.112" lastUpdate="2012-01-12 16:57:35"/>
+      <IPrange begin="192.31.21.159" end="192.31.21.159" lastUpdate="2012-01-12 16:57:35"/>
+      <IPrange begin="192.65.200.0" end="192.65.200.255" lastUpdate="2011-06-29 15:47:01"/>
+      <IPrange begin="192.67.20.0" end="192.67.21.255" lastUpdate="2011-06-29 15:47:01"/>
+      <IPrange begin="192.67.81.0" end="192.67.82.255" lastUpdate="2011-07-05 17:45:46"/>
+      <IPrange begin="192.135.237.0" end="192.135.237.255" lastUpdate="2006-10-11 15:45:40"/>
+      <IPrange begin="192.135.238.0" end="192.135.238.255" lastUpdate="2006-10-11 15:45:40"/>
+      <IPrange begin="192.172.226.0" end="192.172.226.120" lastUpdate="2014-07-02 12:05:56"/>
+      <IPrange begin="192.172.226.122" end="192.172.226.255" lastUpdate="2014-07-02 12:05:56"/>
+      <IPrange begin="198.17.46.0" end="198.17.46.255" lastUpdate="2006-10-11 15:45:40"/>
+      <IPrange begin="198.17.47.0" end="198.17.47.255" lastUpdate="2006-10-11 15:45:40"/>
+      <IPrange begin="198.17.101.0" end="198.17.101.255" lastUpdate="2011-06-29 15:47:01"/>
+      <IPrange begin="198.187.221.0" end="198.187.222.255" lastUpdate="2011-06-29 15:47:01"/>
+      <IPrange begin="198.202.64.0" end="198.202.64.255" lastUpdate="2006-10-11 15:45:40"/>
+      <IPrange begin="198.202.71.0" end="198.202.99.255" lastUpdate="2014-07-02 12:05:56"/>
+      <IPrange begin="198.202.105.0" end="198.202.127.255" lastUpdate="2014-07-02 12:05:56"/>
+      <VPNrange begin="137.110.2.0" end="137.110.99.255" lastUpdate="2010-06-02 13:56:28"/>
+      <VPNrange begin="137.110.192.0" end="137.110.192.255" lastUpdate="2009-02-20 15:51:58"/>
+      <ProxyRange begin="132.239.1.230" end="132.239.1.232" lastUpdate="2009-02-20 15:51:58"/>
+      <ProxyRange begin="132.239.1.231" end="132.239.1.231" lastUpdate="2011-06-29 15:47:01"/>
+      <ProxyRange begin="132.239.1.232" end="132.239.1.232" lastUpdate="2011-06-29 15:47:01"/>
+      <ProxyRange begin="132.239.142.130" end="132.239.142.130" lastUpdate="2009-02-20 15:51:58"/>
+    </IPcampus>
+    <IPcampus name="UCSF">
+      <IPrange begin="63.193.204.0" end="63.193.204.255" lastUpdate="2006-10-11 15:45:39"/>
+      <IPrange begin="63.193.205.0" end="63.193.205.255" lastUpdate="2006-10-11 15:45:39"/>
+      <IPrange begin="64.54.0.0" end="64.54.255.255" lastUpdate="2006-10-11 15:45:39"/>
+      <IPrange begin="128.218.0.0" end="128.218.255.255" lastUpdate="2006-10-11 15:45:39"/>
+      <IPrange begin="169.230.0.0" end="169.230.255.255" lastUpdate="2006-10-11 15:45:39"/>
+      <VPNrange begin="128.218.154.226" end="128.218.154.226" lastUpdate="2006-10-11 15:45:39"/>
+      <VPNrange begin="169.230.240.0" end="169.230.243.255" lastUpdate="2009-03-09 15:57:11">
+        <VPNRangeNote>VPN for UCSF</VPNRangeNote>
+      </VPNrange>
+      <ProxyRange begin="132.174.255.215" end="132.174.255.215" lastUpdate="2013-04-08 17:03:46">
+        <ProxyRangeNote>Proxy hosted at OCLC</ProxyRangeNote>
+      </ProxyRange>
+    </IPcampus>
+    <IPcampus name="LANL">
+      <IPrange begin="128.165.0.0" end="128.165.255.255" lastUpdate="2006-10-11 15:45:40"/>
+      <IPrange begin="192.12.184.0" end="192.12.184.255" lastUpdate="2006-10-11 15:45:40"/>
+      <IPrange begin="192.12.208.0" end="192.12.208.255" lastUpdate="2006-10-11 15:45:40"/>
+      <IPrange begin="192.16.0.0" end="192.16.255.255" lastUpdate="2006-10-11 15:45:40"/>
+      <IPrange begin="204.121.0.0" end="204.121.255.255" lastUpdate="2006-10-11 15:45:40"/>
+      <IPrange begin="207.19.76.254" end="207.19.76.254" lastUpdate="2006-10-11 15:45:40"/>
+      <IPrange begin="209.253.0.0" end="209.253.255.255" lastUpdate="2006-10-11 15:45:40"/>
+    </IPcampus>
+    <IPcampus name="LBL">
+      <IPrange begin="128.3.0.0" end="128.3.59.255" lastUpdate="2007-11-05 15:12:49"/>
+      <IPrange begin="128.3.64.0" end="128.3.255.255" lastUpdate="2006-10-11 15:45:40"/>
+      <IPrange begin="128.55.0.0" end="128.55.255.255" lastUpdate="2008-03-20 12:03:05"/>
+      <IPrange begin="131.243.0.0" end="131.243.51.255" lastUpdate="2006-10-11 15:45:40"/>
+      <IPrange begin="131.243.53.0" end="131.243.255.255" lastUpdate="2006-10-11 15:45:40"/>
+      <IPrange begin="198.128.24.0" end="198.128.24.255" lastUpdate="2008-04-11 13:52:00"/>
+      <IPrange begin="198.128.25.0" end="198.128.25.255" lastUpdate="2008-04-11 13:52:00"/>
+      <IPrange begin="198.128.26.0" end="198.128.26.255" lastUpdate="2008-04-11 13:52:00"/>
+      <IPrange begin="198.128.27.0" end="198.128.27.255" lastUpdate="2008-04-11 13:52:00"/>
+      <IPrange begin="198.128.28.0" end="198.128.31.255" lastUpdate="2012-10-03 16:51:12"/>
+      <IPrange begin="198.128.40.0" end="198.128.40.255" lastUpdate="2008-03-20 12:03:05"/>
+      <IPrange begin="198.128.41.0" end="198.128.41.255" lastUpdate="2008-03-20 12:03:05"/>
+      <IPrange begin="198.128.42.0" end="198.128.42.255" lastUpdate="2012-10-03 16:51:12"/>
+      <IPrange begin="198.128.44.0" end="198.128.44.255" lastUpdate="2008-03-20 12:03:05"/>
+      <IPrange begin="198.128.52.0" end="198.128.52.255" lastUpdate="2012-10-03 16:51:12"/>
+      <IPrange begin="198.128.192.0" end="198.128.207.255" lastUpdate="2013-04-08 17:04:07"/>
+      <IPrange begin="198.129.88.0" end="198.129.91.255" lastUpdate="2006-10-11 15:45:40"/>
+      <IPrange begin="198.129.96.0" end="198.129.96.255" lastUpdate="2008-03-20 12:03:05"/>
+      <IPrange begin="198.129.97.0" end="198.129.97.255" lastUpdate="2008-03-20 12:03:05"/>
+    </IPcampus>
+    <IPcampus name="LLNL">
+      <IPrange begin="128.15.0.0" end="128.15.255.255" lastUpdate="2006-10-11 15:45:40"/>
+      <IPrange begin="128.115.0.0" end="128.115.255.255" lastUpdate="2006-10-11 15:45:40"/>
+      <IPrange begin="134.9.0.0" end="134.9.255.255" lastUpdate="2006-10-11 15:45:40"/>
+      <IPrange begin="192.12.133.0" end="192.12.134.255" lastUpdate="2006-10-11 15:45:40"/>
+      <IPrange begin="198.125.134.0" end="198.125.134.255" lastUpdate="2006-10-11 15:45:40"/>
+      <IPrange begin="198.128.32.0" end="198.128.32.255" lastUpdate="2013-01-03 17:07:44"/>
+      <IPrange begin="198.128.34.0" end="198.128.34.255" lastUpdate="2006-10-11 15:45:40"/>
+      <IPrange begin="198.128.37.0" end="198.128.39.255" lastUpdate="2006-10-11 15:45:40"/>
+      <IPrange begin="198.128.224.0" end="198.128.254.255" lastUpdate="2006-10-11 15:45:40"/>
+      <ProxyRange begin="128.115.27.10" end="128.115.27.10" lastUpdate="2010-06-29 15:20:33">
+        <ProxyRangeNote>Proxy address for LLNL</ProxyRangeNote>
+      </ProxyRange>
+      <ProxyRange begin="128.115.27.11" end="128.115.27.11" lastUpdate="2010-06-29 15:20:43">
+        <ProxyRangeNote>Proxy address for LLNL</ProxyRangeNote>
+      </ProxyRange>
+    </IPcampus>
+    <IPcampus name="STA">
+      <IPrange begin="128.12.0.0" end="128.12.255.255" lastUpdate="2006-10-11 15:45:40"/>
+      <IPrange begin="134.79.0.0" end="134.79.255.255" lastUpdate="2006-10-11 15:45:40"/>
+      <IPrange begin="171.64.0.0" end="171.67.255.255" lastUpdate="2006-10-11 15:45:40"/>
+      <IPrange begin="199.75.211.0" end="199.75.211.255" lastUpdate="2006-10-11 15:45:40"/>
+    </IPcampus>
+  </response>
+</IPRESPONSE>

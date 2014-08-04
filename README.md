@@ -21,15 +21,15 @@ It is recommended that you run the service as a daemon from a shell script.
 Cedilla is already programmed to make the appropriate calls to this service. If you want to use it for other purposes, such as a call from a Cedilla client implementation or another system altogether, you can contact it via one of the following three methods:
 
 * Using the IP address recorded in the HTTP Headers
-> curl http://my.server.edu:port/ip
+```> curl http://my.server.edu:port/ip```
 This approach will extract the IP address included in the HTTP Headers of the incoming call and will return the appropriate campus/consortial identifier or an HTTP 404 error if the IP cannot be mapped to a value.
 
 * Using a specified IP address
-> curl http://my.server.edu:port/ip/123%2E123%2E123%2E123
+```> curl http://my.server.edu:port/ip/123%2E123%2E123%2E123```
 This approach will use the specified IP address to find a matching campus/consortial identifier. If there is no match the service returns an HTTP 404
 
 * Using a campus/consortial identifier (e.g. CAMPUS-A)
-> curl http://my.server.edu:port/campus/CAMPUS-A
+```> curl http://my.server.edu:port/campus/CAMPUS-A```
 This approach will attempt to find the specified identifier and will return the address of the VPN if available or an IP if there is no VPN address. If the identifier cannot be matched an HTTP 404 is returned.
 
 The system makes use of the settingins in the ./config/consortial.yaml file. The file is divided into 2 sections. 

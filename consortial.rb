@@ -7,7 +7,7 @@ class Consortial < Sinatra::Application
   
   def initialize
     begin
-      @config = YAML.load_file('./config/consortial.yaml')
+      @config = YAML.load_file('./config/app.yaml')
   
       super(@config)
     

@@ -16,5 +16,19 @@ configure do
   set :run, true
 end
 
+begin
+  if File.exists?(File.dirname(__FILE__) + '/config/app.yml')
+    $stdout.puts "Loading configuration file."
+    CONFIG = YAML.load_file('./config/app.yml')
+    
+  else
+    $stdout.puts "Warning: ./config/app.yml not found! Using ./config/app.yml.example instead."
+    CONFIG = YAML.load_file('./config/app.yml.example')
+  end
+rescue Exception => e
+  $stdout.puts "Unable to load configuration file, ./config/app.yml!"
+  $stdout.puts "#{e.message}"
+end
+
 # -------------------------------------------------------------------------
 run Consortial.new

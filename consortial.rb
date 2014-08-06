@@ -5,19 +5,6 @@ require 'nokogiri'
 
 class Consortial < Sinatra::Application
   
-  def initialize
-    begin
-      @config = YAML.load_file('./config/app.yaml')
-  
-      super(@config)
-    
-    rescue Exception => e
-      $stdout.puts "Unable to load configuration file!"
-    end
-  
-    super
-  end
-  
   # ---------------------------------------------------------------------------------
   get "/campus/:code" do
     translation = ''
@@ -106,21 +93,21 @@ private
     data = ''
     
     # If the external XML file retrieval has been enabled
-    if @config['retrieve_xml_file']
+    if CONFIG['retrieve_xml_file']
       # If the data in the local XML file is outdated OR the file doesn't exist
-      if File.exists?(@config['xml_file'])
-        last_updated = File.new(@config['xml_file'], "r").mtime 
+      if File.exists?(CONFIG['xml_file'])
+        last_updated = File.new(CONFIG['xml_file'], "r").mtime 
     
         # If the number od days since the data was last downloaded is greater than the number of days specified in the config
-        download_data if ((Time.now - last_updated).to_i / (24 * 60 * 60) > @config['max_age_days'].to_i)
+        download_data if ((Time.now - last_updated).to_i / (24 * 60 * 60) > CONFIG['max_age_days'].to_i)
       else
         download_data
       end
     end
     
     # Load the cross reference data from disk
-    if File.exists?(@config['xml_file'])
-      data = File.open(@config['xml_file'], "r").read
+    if File.exists?(CONFIG['xml_file'])
+      data = File.open(CONFIG['xml_file'], "r").read
     end
     
     ret = 'unknown'
@@ -128,22 +115,22 @@ private
     
     doc = Nokogiri::XML(data)
     
-    doc.xpath(@config["xpath_campus_grouping"]).each do |campus|
+    doc.xpath(CONFIG["xpath_campus_grouping"]).each do |campus|
       unless found
         if !code.nil?
-          if code.to_s == campus.xpath(@config['xpath_campus_name']).to_s
+          if code.to_s == campus.xpath(CONFIG['xpath_campus_name']).to_s
             
             # Always put the IP into the citation because the user may not be on their own campus (e.g student from UC Berkeley 
             # visitng UC Davis) so we should use whichever campus the send. SFX and other services will gate their access if 
             # necessary to the resources behind them
-            first_ip = campus.xpath(@config['xpath_vpn_range_element']).first
+            first_ip = campus.xpath(CONFIG['xpath_vpn_range_element']).first
             
             if first_ip.nil?
-              first_ip = campus.xpath(@config['xpath_ip_range_element']).first if first_ip.nil?
+              first_ip = campus.xpath(CONFIG['xpath_ip_range_element']).first if first_ip.nil?
           
-              ret = first_ip.xpath(@config['xpath_ip_range_start'])
+              ret = first_ip.xpath(CONFIG['xpath_ip_range_start'])
             else
-              ret = first_ip.xpath(@config['xpath_vpn_range_start'])
+              ret = first_ip.xpath(CONFIG['xpath_vpn_range_start'])
             end
             
             found = true
@@ -151,18 +138,18 @@ private
       
         else
           # Check the IP Ranges
-          campus.xpath(@config['xpath_ip_range_element']).each do |range|
-            if ip.to_s >= range.xpath(@config['xpath_ip_range_start']).to_s and ip.to_s <= range.xpath(@config['xpath_ip_range_end']).to_s
-              ret = campus.xpath(@config['xpath_campus_name']) if ret == 'unknown'
+          campus.xpath(CONFIG['xpath_ip_range_element']).each do |range|
+            if ip.to_s >= range.xpath(CONFIG['xpath_ip_range_start']).to_s and ip.to_s <= range.xpath(CONFIG['xpath_ip_range_end']).to_s
+              ret = campus.xpath(CONFIG['xpath_campus_name']) if ret == 'unknown'
               found = true 
             end
           end
           
           # Check the VPN Ranges
           unless found
-            campus.xpath(@config['xpath_vpn_range_element']).each do |range|
-              if ip.to_s >= range.xpath(@config['xpath_vpn_range_start']).to_s and ip.to_s <= range.xpath(@config['xpath_vpn_range_end']).to_s
-                ret = campus.xpath(@config['xpath_campus_name']) if ret == 'unknown'
+            campus.xpath(CONFIG['xpath_vpn_range_element']).each do |range|
+              if ip.to_s >= range.xpath(CONFIG['xpath_vpn_range_start']).to_s and ip.to_s <= range.xpath(CONFIG['xpath_vpn_range_end']).to_s
+                ret = campus.xpath(CONFIG['xpath_campus_name']) if ret == 'unknown'
                 found = true 
               end
             end
@@ -177,7 +164,7 @@ private
   # -------------------------------------------------------------------------
   def download_data
     response = nil
-    target = @config['target']
+    target = CONFIG['target']
     
     # Call the target
     begin  
@@ -206,7 +193,7 @@ private
     
     unless response.nil?
       # Save the XML to disk
-      file = File.new(@config['xml_file'], "w+")
+      file = File.new(CONFIG['xml_file'], "w+")
       
       file.write(response.body.to_s)
       file.flush

@@ -1,5 +1,8 @@
 *.lock
 *.xml
 *.log
+*.sh
 
 config/*.yml
+
+tmp/
